@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import '../styles/App.css';
-import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+import {BrowserRouter as Router, Route, Switch, Redirect} from 'react-router-dom';
 import Home from './Home';
 import MyProfile from './MyProfile';
 import AboutUs from './AboutUs';
@@ -20,6 +20,8 @@ class App extends Component {
             <Route path='/about-us' component={AboutUs} />
             <Route path='/products/:id' component={Product} />
             <Route path='/products' component={Products} />
+            <Redirect from='/goods' to='/products' />
+            <Redirect from='/*' to='/' />
           </Switch>
         </Router>
       </div>
