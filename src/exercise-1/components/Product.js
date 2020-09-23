@@ -10,7 +10,7 @@ const idToName = {
 const Product = (props) => {
   const id = props.match.params.id;
   return (
-    <section id={`product-${id}`}>
+    <section id={`product-${id}`} className="product">
       <h3>Product Details:</h3>
       <p>Name: {data[idToName[id]].name}</p>
       <p>Id: {data[idToName[id]].id}</p>
