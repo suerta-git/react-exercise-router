@@ -5,9 +5,9 @@ const AboutUs = () => (
   <section id="about-us">
     <p>Company: ThoughtWorks Local</p>
     <p>Location: Xi'an</p>
-    <p></p>
+    <br />
     <p>For more information, please</p>
-    <p>view our <Link to='/'>website</Link>.</p>
+    <p>view our <Link to='/' className='keep-red'>website</Link>.</p>
   </section>
 );
 
